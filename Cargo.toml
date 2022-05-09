@@ -6,8 +6,8 @@ authors = ["Dino Bikic <bikic.dino@gmail.com>"]
 license = "MIT"
 description = "Tool for updating your cargo project version"
 readme = "README.md"
-homepage = "https://github.com/dbikic/various-rust-utils"
-repository = "https://github.com/dbikic/various-rust-utils"
+homepage = "https://github.com/dbikic/cargo-release-script"
+repository = "https://github.com/dbikic/cargo-release-script"
 keywords = ["cli"]
 categories = ["command-line-utilities"]
 
