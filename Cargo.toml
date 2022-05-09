@@ -1,5 +1,5 @@
 [package]
-name = "release-script"
+name = "cargo-release-script"
 version = "0.1.0"
 edition = "2021"
 authors = ["Dino Bikic <bikic.dino@gmail.com>"]
