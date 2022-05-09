@@ -1,6 +1,6 @@
 [package]
-name = "release-script"
-version = "0.1.1"
+name = "cargo-release-script"
+version = "0.1.2"
 edition = "2021"
 authors = ["Dino Bikic <bikic.dino@gmail.com>"]
 license = "MIT"
