@@ -29,10 +29,7 @@ pub fn check_if_on_correct_branch() -> Result<String> {
 pub fn commit_version_change(version: &str, origin_branch: String) -> Result<()> {
     execute_command(
         format!("git pull origin {}", origin_branch),
-        format!(
-            "Failed to pull branch: {}!",
-            origin_branch
-        ),
+        format!("Failed to pull branch: {}!", origin_branch),
     )?;
     let branch_name = format!("release-{}", version);
     execute_command(
@@ -85,8 +82,10 @@ fn execute_command(command: String, error_message: String) -> Result<()> {
 pub fn get_repo_name() -> Result<(String, String)> {
     let command = Command::new("sh")
         .arg("-c")
-        .arg("git config --get remote.origin.url
-")
+        .arg(
+            "git config --get remote.origin.url
+",
+        )
         .output()
         .expect("failed to execute process");
     let origin_url = String::from_utf8(command.stdout)

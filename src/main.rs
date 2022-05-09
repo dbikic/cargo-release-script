@@ -50,9 +50,7 @@ fn main() -> Result<()> {
     let (repo_owner, repo_name) = get_repo_name()?;
     println!(
         "https://github.com/{}/{}/compare/release-{}?expand=1",
-        repo_owner,
-        repo_name,
-        version,
+        repo_owner, repo_name, version,
     );
     Ok(())
 }
