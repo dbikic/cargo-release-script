@@ -1,0 +1,20 @@
+[package]
+name = "release-script"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dino Bikic <bikic.dino@gmail.com>"]
+license = "MIT"
+description = "Tool for updating your cargo project version"
+readme = "README.md"
+homepage = "https://github.com/dbikic/various-rust-utils"
+repository = "https://github.com/dbikic/various-rust-utils"
+keywords = ["cli"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cargo_metadata = "0.14.2"
+clap = { version = "3.1.6", features = ["derive"] }
+error-chain = "0.12.4"
+semver = "1.0.6"
